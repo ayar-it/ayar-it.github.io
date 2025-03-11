@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/about.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/about.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="programm-logo-version">
-        <div class="programm-logo-version__logo">
-            <img src="/assets/ayar_icon.png" alt="">
-            <div>
-                AYARBOOK
-            </div>
-        </div>
-        <div class="programm-logo-version__version">
-            <div>Версия</div>
-            <div id="version-info"></div>
-        </div>
+      <div class="programm-logo-version__logo">
+        <img src="/assets/ayar_icon.png" alt="" />
+        <div>AYARBOOK</div>
+      </div>
+      <div class="programm-logo-version__version">
+        <div>Версия</div>
+        <div id="version-info"></div>
+      </div>
     </div>
     <div class="programm-about">
-        <div class="programm-about__info">
-            Приложение разработано <strong>"АО НИК Айар"</strong> в 2025г. с целью сделать чтение электронных книг удобным и доступным. 
-        </div>
+      <div class="programm-about__info">
+        Приложение разработано <strong>"АО НИК Айар"</strong> в 2025г. с целью
+        сделать чтение электронных книг удобным и доступным.
+      </div>
+      <div class="programm-about__contact">
+        Контакты: <br />
+        Сайт: ayar.ru <br>
+        Почта: support@ayar.ru <br>
+      </div>
     </div>
     <script>
-       const elVersion = document.querySelector('#version-info')
-       const urlParams = new URLSearchParams(window.location.search);
-       const version = urlParams.get('version');
-       if (elVersion && version) {
+      const elVersion = document.querySelector("#version-info");
+      const urlParams = new URLSearchParams(window.location.search);
+      const version = urlParams.get("version");
+      if (elVersion && version) {
         elVersion.innerHTML = `(${version})`;
-       }
+      }
     </script>
-</body>
+  </body>
 </html>
