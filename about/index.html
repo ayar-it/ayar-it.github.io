@@ -10,6 +10,9 @@
     <div class="programm-logo-version">
         <div class="programm-logo-version__logo">
             <img src="/assets/ayar_icon.png" alt="">
+            <div>
+                AYARBOOK
+            </div>
         </div>
         <div class="programm-logo-version__version">
             <div>Версия</div>
@@ -26,7 +29,7 @@
        const urlParams = new URLSearchParams(window.location.search);
        const version = urlParams.get('version');
        if (elVersion && version) {
-        elVersion.innerHTML = version;
+        elVersion.innerHTML = `(${version})`;
        }
     </script>
 </body>

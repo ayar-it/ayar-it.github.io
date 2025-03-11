@@ -20,6 +20,11 @@ body {
     width: 100%;
     height: 100%;
 }
+.programm-logo-version__logo div {
+    text-align: center;
+    font-weight: 500;
+    /* color: rgb(119, 119, 119); */
+}
 
 .programm-logo-version__version {
     gap: 4px;
