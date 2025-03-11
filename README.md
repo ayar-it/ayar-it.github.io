@@ -1,0 +1,2 @@
+# staticpage
+# ayar-it
